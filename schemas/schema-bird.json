@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "/schemas/schema-bird.json",
+  "title": "Bird",
+  "description": "Key fields for a Bird entry",
+  "type": "object",
+	"properties": {
+		"name": {
+			"type": "string",
+			"description": "Capitalise each letter, and use dashes for descriptive terms, e.g. 'White-throated'"
+		},
+		"family_name": {
+			"type": "string",
+			"description": "The grouping or collective name for this bird, e.g. a Booted Eagle's family name is 'Eagle'"
+		},
+		"german_name": {
+			"type": "string",
+			"description": "The common name for this bird in German"
+		},
+		"afrikaans_name": {
+			"type": "string",
+			"description": "The common name for this bird in Afrikaans"
+		},
+		"genus": {
+			"type": "string",
+			"description": "The first part of this bird's scientific name, e.g. 'Batis' in 'Batis capensis'"
+		},
+		"species": {
+			"type": "string",
+			"description": "The second part of this bird's scientific name, e.g. 'capensis' in 'Batis capensis'"
+		},
+		"ebird": {
+			"type": "string",
+			"description": "A canonical URL on eBird for this bird. Add a 'ZA' suffix to the URL please"
+		},
+		"wikipedia": {
+			"type": "string",
+			"description": "A canonical URL on WikiPedia for this bird"
+		},
+		"red-list": {
+			"type": "string",
+			"description": "The IUCN classification for this bird. See `src/_data/red-list.yml`",
+			"default": "least-concern"
+		},
+		"hidden": {
+			"type": "boolean",
+			"description": "If set to 'true', then this bird hasn't been sighted or photographed. Useful for representing this bird as an opportunity to be seen in the area.",
+			"default": "false"
+		},
+		"photo": {
+			"type": "object",
+			"description": "",
+			"properties": {
+				"id": {
+					"type": "string",
+					"description": ""
+				},
+				"tx": {
+					"type": "string",
+					"description": ""
+				},
+				"ty": {
+					"type": "string",
+					"description": ""
+				},
+				"scale": {
+					"type": "number",
+					"description": ""
+				}
+			},
+			"required": [
+				"id"
+			]
+		}
+	},
+	"required": [
+    "name",
+    "family_name",
+		"german_name",
+		"afrikaans_name",
+		"genus",
+		"species",
+		"ebird",
+		"wikipedia",
+		"red-list"
+  ]
+}

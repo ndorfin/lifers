@@ -19,12 +19,14 @@
 	"author": "Shaun O'Connell <shaun@tactile.co.za>",
 	"type": "module",
 	"scripts": {
-		"serve": "npx @11ty/eleventy --serve"
+		"serve": "npx @11ty/eleventy --serve",
+		"start": "npm run serve"
 	},
 	"engines": {
 		"node": "24.16.0"
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "^3.1.5"
+		"@11ty/eleventy": "^3.1.5",
+		"@11ty/eleventy-plugin-directory-output": "^1.0.2"
 	}
 }
