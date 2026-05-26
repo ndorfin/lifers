@@ -1,0 +1,20 @@
+least-concern:
+  abbr: LC
+  title: Least concern
+  severity: 1
+near-threatened:
+  abbr: NT
+  title: Near threatened
+  severity: 2
+vulnerable:
+  abbr: VU
+  title: Vulnerable
+  severity: 3
+endangered:
+  abbr: EN
+  title: Endangered
+  severity: 4
+critically-endangered:
+  abbr: CR
+  title: Critically-Endangered
+  severity: 5
