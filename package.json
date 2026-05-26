@@ -1,0 +1,30 @@
+{
+	"name": "lifers",
+	"version": "1.0.0",
+	"description": "A collection of bird photos",
+	"keywords": [
+		"birds",
+		"photos",
+		"lifelist"
+	],
+	"homepage": "https://github.com/ndorfin/lifers#readme",
+	"bugs": {
+		"url": "https://github.com/ndorfin/lifers/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ndorfin/lifers.git"
+	},
+	"license": "MPL-2.0",
+	"author": "Shaun O'Connell <shaun@tactile.co.za>",
+	"type": "module",
+	"scripts": {
+		"serve": "npx @11ty/eleventy --serve"
+	},
+	"engines": {
+		"node": "24.16.0"
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^3.1.5"
+	}
+}
